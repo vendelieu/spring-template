@@ -63,3 +63,12 @@ The app defines following for APIs.
 	    "name":"Walter W",
 	    "username":"saymyname"
     }
+
+## Features
+
+The project uses a [jOOQ extension plugin](https://github.com/vendelieu/jooq-extension) that extends DAO with interface
+that have some helpful functions which often covers the need for repositories, so don't be surprised.
+
+Project also uses a Kotlin idiomatic approach in the error handling process - “exceptions for exceptional cases”, i.e.
+business logic and its failures are processed manually and are completely covered without throwing exceptions for every
+sneeze and smearing logic out of context.

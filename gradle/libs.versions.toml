@@ -1,0 +1,72 @@
+[versions]
+jackson = "2.15.3"
+jackson-arrow = "0.14.1"
+arrow = "1.2.0"
+swagger = "2.2.0"
+postgres = "42.6.0"
+
+# misc
+mu-logging = "3.0.5"
+logback = "1.4.11"
+kotlinter = "3.13.0"
+
+# test
+kotest = "5.8.0"
+mockk = "1.13.8"
+mockk-spring = "3.1.2"
+
+# plugins
+kotlin = "1.9.20"
+flyway = "9.22.3"
+jooq-extension = "0.1.1"
+jooq-plugin = "6.0.0"
+spring-boot = "3.1.5"
+spring-boot-security = "6.1.5"
+
+[libraries]
+spring-boot-starter = { module = "org.springframework.boot:spring-boot-starter", version.ref = "spring-boot" }
+spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web", version.ref = "spring-boot" }
+spring-boot-starter-security = { module = "org.springframework.boot:spring-boot-starter-security", version.ref = "spring-boot" }
+spring-boot-starter-jooq = { module = "org.springframework.boot:spring-boot-starter-jooq", version.ref = "spring-boot" }
+
+spring-boot-security-oauth-jose = { module = "org.springframework.security:spring-security-oauth2-jose", version.ref = "spring-boot-security" }
+spring-boot-security-oauth-client = { module = "org.springframework.security:spring-security-oauth2-client", version.ref = "spring-boot-security" }
+spring-boot-security-oauth-resource-server = { module = "org.springframework.security:spring-security-oauth2-resource-server", version.ref = "spring-boot-security" }
+
+fly-core = { module = "org.flywaydb:flyway-core", version.ref = "flyway" }
+postgres = { module = "org.postgresql:postgresql", version.ref = "postgres" }
+
+swagger = { module = "org.springdoc:springdoc-openapi-starter-webmvc-ui", version.ref = "swagger" }
+arrow-core = { module = "io.arrow-kt:arrow-core", version.ref = "arrow" }
+kotlin-reflections = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+
+jackson-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version.ref = "jackson" }
+jackson-arrow = { module = "io.arrow-kt:arrow-integrations-jackson-module", version.ref = "jackson-arrow" }
+
+mu-logging = { module = "io.github.microutils:kotlin-logging-jvm", version.ref = "mu-logging" }
+logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+
+# test
+kotest-junit5 = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
+kotest-assertions = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
+kotest-framework-api = { module = "io.kotest:kotest-framework-api", version.ref = "kotest" }
+kotest-property = { module = "io.kotest:kotest-property", version.ref = "kotest" }
+kotest-runner-junit5 = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
+mockk-spring = { module = "com.ninja-squad:springmockk", version.ref = "mockk-spring" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test", version.ref = "spring-boot" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+
+kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+
+jooq = { id = "dev.monosoul.jooq-docker", version.ref = "jooq-plugin" }
+jooq-extension = { id = "eu.vendeli.jooq.extension", version.ref = "jooq-extension" }
+fly-plugin = { id = "org.flywaydb.flyway", version.ref = "flyway" }
+
+ktlinter = { id = "org.jmailen.kotlinter", version.ref = "kotlinter" }
+
+
+

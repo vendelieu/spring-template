@@ -1,0 +1,53 @@
+version: "3.9"
+
+services:
+  postgres:
+    container_name: database
+    image: postgres:15-alpine
+    command: [ postgres, -c, log_statement=all ]
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+    environment:
+      DEBUG: "false"
+      POSTGRES_USER: example
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: example
+    volumes:
+      - ./db_data:/var/lib/postgresql/data
+    tmpfs: [ "/var/run/postgresql:uid=70,gid=70", "/tmp" ]
+    read_only: true
+    networks:
+      - app_network
+
+  keycloak:
+    container_name: auth-server
+    image: jboss/keycloak:16.1.0
+    environment:
+      DB_VENDOR: POSTGRES
+      DB_ADDR: postgres
+      DB_DATABASE: example
+      DB_USER: example
+      DB_PASSWORD: example
+    depends_on:
+      - postgres
+    volumes:
+      - ./keycloak_data:/opt/jboss/keycloak/standalone/data/
+    networks:
+      - app_network
+
+  app:
+    container_name: application
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+    depends_on:
+      - keycloak
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge

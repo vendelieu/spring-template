@@ -1,0 +1,55 @@
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+
+spring:
+  datasource:
+    hikari:
+      validation-timeout: 1000
+      connection-timeout: 1000
+      idle-timeout: 60000
+      maximum-pool-size: 24
+      auto-commit: true
+      minimum-idle: 4
+    password: example
+    username: example
+    url: jdbc:postgresql://localhost/example
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8000/auth/realms/example_realm
+          jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
+      client:
+        registration:
+          keycloak:
+            client-id: example_client
+            client-secret: SECRET
+            clientName: example_client
+            authorization-grant-type: authorization_code
+            redirect-uri: "http://localhost:8000/login/oauth2/code/{registrationId}"
+            scope:
+              - openid
+              - profile
+              - email
+        provider:
+          keycloak:
+            issuer-uri: http://localhost:8000/auth/realms/example_realm
+
+  servlet:
+    multipart:
+      max-file-size: 60MB
+      enabled: true
+      max-request-size: 60MB
+
+server:
+  error:
+    include-stacktrace: never
+  port: 8080
+
+jwt:
+  auth:
+    converter:
+      principle-attribute: preferred_username

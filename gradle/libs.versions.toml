@@ -8,7 +8,7 @@ postgres = "42.6.0"
 # misc
 mu-logging = "3.0.5"
 logback = "1.4.11"
-kotlinter = "3.13.0"
+kotlinter = "4.1.0"
 
 # test
 kotest = "5.8.0"

@@ -87,6 +87,10 @@ tasks {
         delete(jooqOutputDir)
     }
 
+    jar {
+        archiveFileName.set("app.jar")
+    }
+
     generateJooqClasses {
         schemas.set(dbTargetSchemaList)
         basePackageName.set("${project.group}.jooq.generated")

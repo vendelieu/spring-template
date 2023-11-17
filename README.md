@@ -22,11 +22,9 @@ Build the project with gradle:
 
 Build Docker and run docker with docker-compose:
 
-    cd ./docker
-
     ./gradlew build
 
-    docker-compose up -d
+    docker compose -f ./docker up -d
 
 The app will start running at  [http://localhost:8080](http://localhost:8080/)
 

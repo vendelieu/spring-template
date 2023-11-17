@@ -1,4 +1,4 @@
-package eu.vendeli.dto.wrapper
+package eu.vendeli.dto.response.wrapper
 
 import com.fasterxml.jackson.annotation.JsonValue
 

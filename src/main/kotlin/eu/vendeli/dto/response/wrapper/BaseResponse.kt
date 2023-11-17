@@ -1,4 +1,4 @@
-package eu.vendeli.dto.wrapper
+package eu.vendeli.dto.response.wrapper
 
 data class BaseResponse<T>(
     val code: Int,

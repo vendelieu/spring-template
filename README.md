@@ -24,7 +24,7 @@ Build Docker and run docker with docker-compose:
 
     cd ./docker
 
-    docker build -t app
+    ./gradlew build
 
     docker-compose up -d
 

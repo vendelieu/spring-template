@@ -1,9 +1,9 @@
 package eu.vendeli.controller
 
 import eu.vendeli.dto.request.UserUpdateRequest
-import eu.vendeli.dto.wrapper.Response
-import eu.vendeli.dto.wrapper.failureResponse
-import eu.vendeli.dto.wrapper.successResponse
+import eu.vendeli.dto.response.wrapper.Response
+import eu.vendeli.dto.response.wrapper.failureResponse
+import eu.vendeli.dto.response.wrapper.successResponse
 import eu.vendeli.jooq.generated.tables.pojos.User
 import eu.vendeli.service.UserService
 import eu.vendeli.service.UserService.UserUpdateFailures

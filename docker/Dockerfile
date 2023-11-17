@@ -5,7 +5,7 @@ WORKDIR /app
 RUN gradle build
 
 # Second stage: create a slim image
-FROM openjdk:17-jdk
+FROM openjdk:17.0.2-jdk
 RUN mkdir /app
 # RUN microdnf install findutils
 COPY build/libs/app.jar /app/

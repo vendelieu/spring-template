@@ -16,7 +16,7 @@ mockk = "1.13.8"
 mockk-spring = "4.0.2"
 
 # plugins
-kotlin = "1.9.20"
+kotlin = "1.9.21"
 flyway = "10.1.0"
 jooq-extension = "0.1.2"
 jooq-plugin = "6.0.3"

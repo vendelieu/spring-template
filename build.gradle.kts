@@ -118,6 +118,7 @@ tasks {
 
 java {
     sourceCompatibility = javaVersion
+    targetCompatibility = javaVersion
 }
 
 kotlin {

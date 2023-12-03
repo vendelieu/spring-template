@@ -1,7 +1,7 @@
 import eu.vendeli.jooq.generator.ExtendedJavaJooqGenerator
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-val javaVersion = JavaVersion.VERSION_17
+val javaVersion = JavaVersion.VERSION_11
 val dbUrl = project.findProperty("database-url")!!.toString()
 val dbUser = project.findProperty("database-user")!!.toString()
 val dbPwd = project.findProperty("database-pwd")!!.toString()

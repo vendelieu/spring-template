@@ -4,6 +4,7 @@ jackson-arrow = "0.14.1"
 arrow = "1.2.1"
 swagger = "2.3.0"
 postgres = "42.7.1"
+hikari = "5.1.0"
 
 # misc
 mu-logging = "3.0.5"
@@ -27,14 +28,16 @@ spring-boot-security = "6.2.1"
 spring-boot-starter = { module = "org.springframework.boot:spring-boot-starter", version.ref = "spring-boot" }
 spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web", version.ref = "spring-boot" }
 spring-boot-starter-security = { module = "org.springframework.boot:spring-boot-starter-security", version.ref = "spring-boot" }
-spring-boot-starter-jooq = { module = "org.springframework.boot:spring-boot-starter-jooq", version.ref = "spring-boot" }
+spring-boot-starter-jdbc = { module = "org.springframework.boot:spring-boot-starter-jdbc", version.ref = "spring-boot" }
 
 spring-boot-security-oauth-jose = { module = "org.springframework.security:spring-security-oauth2-jose", version.ref = "spring-boot-security" }
 spring-boot-security-oauth-client = { module = "org.springframework.security:spring-security-oauth2-client", version.ref = "spring-boot-security" }
 spring-boot-security-oauth-resource-server = { module = "org.springframework.security:spring-security-oauth2-resource-server", version.ref = "spring-boot-security" }
 
+hikari = { module = "com.zaxxer:HikariCP", version.ref = "hikari" }
 fly-core = { module = "org.flywaydb:flyway-core", version.ref = "flyway" }
 postgres = { module = "org.postgresql:postgresql", version.ref = "postgres" }
+jooq = { module = "org.jooq:jooq" }
 
 swagger = { module = "org.springdoc:springdoc-openapi-starter-webmvc-ui", version.ref = "swagger" }
 arrow-core = { module = "io.arrow-kt:arrow-core", version.ref = "arrow" }

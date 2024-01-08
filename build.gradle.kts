@@ -1,3 +1,4 @@
+import dev.monosoul.jooq.RecommendedVersions
 import eu.vendeli.jooq.generator.ExtendedJavaJooqGenerator
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
@@ -29,7 +30,7 @@ dependencies {
     implementation(libs.spring.boot.starter)
     implementation(libs.spring.boot.starter.web)
     implementation(libs.spring.boot.starter.security)
-    implementation(libs.spring.boot.starter.jooq)
+    implementation(libs.spring.boot.starter.jdbc)
 
     implementation(libs.spring.boot.security.oauth.jose)
     implementation(libs.spring.boot.security.oauth.client)
@@ -44,8 +45,10 @@ dependencies {
     implementation(libs.mu.logging)
     runtimeOnly(libs.logback.classic)
 
+    implementation(libs.hikari)
     implementation(libs.fly.core)
     runtimeOnly(libs.postgres)
+    implementation("org.jooq:jooq:${RecommendedVersions.JOOQ_VERSION}")
     jooqCodegen(libs.postgres)
 
     testImplementation(libs.spring.boot.starter.test) {
@@ -103,7 +106,6 @@ tasks {
             generate.apply {
                 name = ExtendedJavaJooqGenerator::class.java.name
                 isDeprecated = false
-                isRecords = true
                 isPojos = true
                 isImmutablePojos = false
                 isFluentSetters = true

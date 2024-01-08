@@ -12,6 +12,7 @@ logback = "1.4.14"
 kotlinter = "4.1.0"
 
 # test
+testcontainers = "1.19.3"
 kotest = "5.8.0"
 mockk = "1.13.8"
 mockk-spring = "4.0.2"
@@ -36,8 +37,8 @@ spring-boot-security-oauth-resource-server = { module = "org.springframework.sec
 
 hikari = { module = "com.zaxxer:HikariCP", version.ref = "hikari" }
 fly-core = { module = "org.flywaydb:flyway-core", version.ref = "flyway" }
+fly-postgres = { module = "org.flywaydb:flyway-database-postgresql", version.ref = "flyway" }
 postgres = { module = "org.postgresql:postgresql", version.ref = "postgres" }
-jooq = { module = "org.jooq:jooq" }
 
 swagger = { module = "org.springdoc:springdoc-openapi-starter-webmvc-ui", version.ref = "swagger" }
 arrow-core = { module = "io.arrow-kt:arrow-core", version.ref = "arrow" }
@@ -50,6 +51,8 @@ mu-logging = { module = "io.github.microutils:kotlin-logging-jvm", version.ref =
 logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
 
 # test
+testcontainers-junit = { module = "org.testcontainers:junit-jupiter", version.ref = "testcontainers" }
+testcontainers-postgres = { module = "org.testcontainers:postgresql", version.ref = "testcontainers" }
 kotest-junit5 = { module = "io.kotest:kotest-runner-junit5", version.ref = "kotest" }
 kotest-assertions = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
 kotest-framework-api = { module = "io.kotest:kotest-framework-api", version.ref = "kotest" }

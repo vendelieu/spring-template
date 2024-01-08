@@ -46,11 +46,14 @@ dependencies {
     runtimeOnly(libs.logback.classic)
 
     implementation(libs.hikari)
-    implementation(libs.fly.core)
+    runtimeOnly(libs.fly.core)
+    runtimeOnly(libs.fly.postgres)
     runtimeOnly(libs.postgres)
     implementation("org.jooq:jooq:${RecommendedVersions.JOOQ_VERSION}")
     jooqCodegen(libs.postgres)
 
+    testImplementation(libs.testcontainers.junit)
+    testImplementation(libs.testcontainers.postgres)
     testImplementation(libs.spring.boot.starter.test) {
         exclude("junit", "junit")
         exclude("org.skyscreamer", "jsonassert")

@@ -12,14 +12,14 @@ logback = "1.4.14"
 kotlinter = "4.2.0"
 
 # test
-testcontainers = "1.19.4"
+testcontainers = "1.19.5"
 kotest = "5.8.0"
 mockk = "1.13.9"
 mockk-spring = "4.0.2"
 
 # plugins
 kotlin = "1.9.22"
-flyway = "10.7.1"
+flyway = "10.7.2"
 jooq-extension = "0.1.2"
 jooq-plugin = "6.0.10"
 spring-boot = "3.2.2"

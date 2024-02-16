@@ -8,7 +8,7 @@ hikari = "5.1.0"
 
 # misc
 mu-logging = "3.0.5"
-logback = "1.4.14"
+logback = "1.5.0"
 kotlinter = "4.2.0"
 
 # test
@@ -23,7 +23,7 @@ flyway = "10.8.1"
 jooq-extension = "0.1.2"
 jooq-plugin = "6.0.11"
 spring-boot = "3.2.2"
-spring-boot-security = "6.2.1"
+spring-boot-security = "6.2.2"
 
 [libraries]
 spring-boot-starter = { module = "org.springframework.boot:spring-boot-starter", version.ref = "spring-boot" }

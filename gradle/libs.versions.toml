@@ -12,7 +12,7 @@ logback = "1.5.0"
 kotlinter = "4.2.0"
 
 # test
-testcontainers = "1.19.5"
+testcontainers = "1.19.6"
 kotest = "5.8.0"
 mockk = "1.13.9"
 mockk-spring = "4.0.2"

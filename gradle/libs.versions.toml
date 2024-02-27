@@ -1,7 +1,7 @@
 [versions]
 jackson = "2.16.1"
 jackson-arrow = "0.14.1"
-arrow = "1.2.1"
+arrow = "1.2.2"
 swagger = "2.3.0"
 postgres = "42.7.2"
 hikari = "5.1.0"

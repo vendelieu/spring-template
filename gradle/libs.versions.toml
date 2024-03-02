@@ -8,7 +8,7 @@ hikari = "5.1.0"
 
 # misc
 mu-logging = "3.0.5"
-logback = "1.5.1"
+logback = "1.5.2"
 kotlinter = "4.2.0"
 
 # test

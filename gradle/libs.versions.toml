@@ -23,7 +23,7 @@ flyway = "10.10.0"
 jooq-extension = "0.1.2"
 jooq-plugin = "6.0.17"
 spring-boot = "3.2.3"
-spring-boot-security = "6.2.2"
+spring-boot-security = "6.2.3"
 
 [libraries]
 spring-boot-starter = { module = "org.springframework.boot:spring-boot-starter", version.ref = "spring-boot" }

@@ -2,7 +2,7 @@
 jackson = "2.17.0"
 jackson-arrow = "0.14.1"
 arrow = "1.2.3"
-swagger = "2.4.0"
+swagger = "2.5.0"
 postgres = "42.7.3"
 hikari = "5.1.0"
 
@@ -21,7 +21,7 @@ mockk-spring = "4.0.2"
 kotlin = "1.9.23"
 flyway = "10.10.0"
 jooq-extension = "0.1.2"
-jooq-plugin = "6.0.17"
+jooq-plugin = "6.0.18"
 spring-boot = "3.2.4"
 spring-boot-security = "6.2.3"
 

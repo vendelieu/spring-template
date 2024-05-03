@@ -21,7 +21,7 @@ mockk-spring = "4.0.2"
 kotlin = "1.9.23"
 flyway = "10.12.0"
 jooq-extension = "0.1.2"
-jooq-plugin = "6.0.20"
+jooq-plugin = "6.0.21"
 spring-boot = "3.2.5"
 spring-boot-security = "6.2.4"
 

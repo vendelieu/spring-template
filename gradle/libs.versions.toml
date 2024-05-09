@@ -13,7 +13,7 @@ kotlinter = "4.3.0"
 
 # test
 testcontainers = "1.19.8"
-kotest = "5.8.1"
+kotest = "5.9.0"
 mockk = "1.13.10"
 mockk-spring = "4.0.2"
 

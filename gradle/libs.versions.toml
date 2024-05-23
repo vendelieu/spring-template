@@ -22,7 +22,7 @@ kotlin = "2.0.0"
 flyway = "10.13.0"
 jooq-extension = "0.1.2"
 jooq-plugin = "6.0.23"
-spring-boot = "3.2.5"
+spring-boot = "3.2.6"
 spring-boot-security = "6.3.0"
 
 [libraries]

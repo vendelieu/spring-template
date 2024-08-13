@@ -19,7 +19,7 @@ mockk-spring = "4.0.2"
 
 # plugins
 kotlin = "2.0.10"
-flyway = "10.17.0"
+flyway = "10.17.1"
 jooq-extension = "0.1.2"
 jooq-plugin = "6.1.1"
 spring-boot = "3.3.2"

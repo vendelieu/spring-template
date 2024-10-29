@@ -1,5 +1,5 @@
 [versions]
-jackson = "2.18.0"
+jackson = "2.18.1"
 jackson-arrow = "0.14.1"
 arrow = "1.2.4"
 swagger = "2.6.0"

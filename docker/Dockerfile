@@ -1,5 +1,5 @@
 # First stage: build the application
-FROM gradle:8.10-jdk17-alpine AS build
+FROM gradle:8.11-jdk17-alpine AS build
 COPY . /app
 WORKDIR /app
 RUN gradle build

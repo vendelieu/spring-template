@@ -14,7 +14,7 @@ kotlinter = "5.0.2"
 # test
 testcontainers = "1.21.0"
 kotest = "5.9.1"
-mockk = "1.14.0"
+mockk = "1.14.2"
 mockk-spring = "4.0.2"
 
 # plugins

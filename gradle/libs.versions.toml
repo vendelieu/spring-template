@@ -2,7 +2,7 @@
 jackson = "2.19.0"
 jackson-arrow = "0.15.1"
 arrow = "1.2.4"
-swagger = "2.8.6"
+swagger = "2.8.8"
 postgres = "42.7.5"
 hikari = "5.1.0"
 

@@ -15,7 +15,7 @@ kotlinter = "5.2.0"
 testcontainers = "1.21.3"
 kotest = "5.9.1"
 mockk = "1.14.5"
-mockk-spring = "4.0.2"
+mockk-spring = "5.0.1"
 
 # plugins
 kotlin = "2.2.0"
